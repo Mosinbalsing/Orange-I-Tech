@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    nav{
+        height: 50px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    .sidebar{
+        height: 100vh;
+        background-color: red;
+        width: 200px;
+        margin-top: -50px;
+        position: fixed;
+        transform: translateX(-100%);
+        transition: all 0.5s ease-in-out;
+    }
+    .show{
+        transform: translateX(0);
+        box-shadow: 0 0 10px rgba(0,0,0,10);
+    }
+    </style>
+</head>
+<body>
+    <nav>NavBar <button >Toggle</button></nav>
+    <div class="sidebar">
+        Side Bar
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
