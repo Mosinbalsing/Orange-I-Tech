@@ -7,13 +7,12 @@ public class Pattern5 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the Number: ");
         int num = sc.nextInt();
-        int d = num/2;
-        System.out.println(d);
-        for (int i = 0; i < num; i++) {
+        
+        for (int i = 0; i <= num; i++) {
             for (int j = 0; j <= (num+1)/2-(i-1); j++) {
-                System.out.print(" _ ");
+                System.out.print("   ");
             }
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j <i; j++) {
                 System.out.print(" * ");
             }
             System.out.println();
